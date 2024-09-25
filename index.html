@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DevOps Case Study - Kubernetes Deployment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Apache Website Deployment on Kubernetes</h1>
+      <p class="lead">A Will Demonstrating Kubernetes, Docker, and Ingress Setup</p>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="container my-5">
+    <section id="about-project" class="py-5 text-center">
+      <h2>About the Project</h2>
+      <p>This project showcases the deployment of an Apache website using <strong>Docker</strong> and <strong>Kubernetes</strong> with 2 replicas and Ingress rules for path-based routing. It's part of the transition from Monolithic to Microservices Architecture at Ventura Software.</p>
+    </section>
+
+    <section id="technologies" class="py-5 text-center bg-light">
+      <h2>Technologies Used</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Docker</h3>
+          <p>Containerizing the Apache website using a custom Dockerfile and pushing it to Docker Hub.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Kubernetes</h3>
+          <p>Deploying the Dockerized Apache app on Kubernetes with multiple replicas and services.</p>
+        </div>
+        <div class="col-md-4">
+          <h3>Ingress</h3>
+          <p>Setting up an Ingress Controller for routing traffic based on specific paths for multi-service architecture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="deployment" class="py-5 text-center">
+      <h2>Deployment Steps</h2>
+      <p>Check out the detailed deployment steps for this project:</p>
+      <ul class="list-group">
+        <li class="list-group-item">Step 1: Clone the Apache website from GitHub and create a Dockerfile</li>
+        <li class="list-group-item">Step 2: Build and push the Docker image to Docker Hub</li>
+        <li class="list-group-item">Step 3: Create a Kubernetes deployment with 2 replicas</li>
+        <li class="list-group-item">Step 4: Set up services and Ingress routing</li>
+        <li class="list-group-item">Step 5: Verify the deployment and access the services</li>
+      </ul>
+    </section>
+
+    <section id="github" class="py-5 text-center bg-light">
+      <h2>Check it out on GitHub</h2>
+      <p>You can find the solution for this project on my GitHub repository:</p>
+      <a href="https://github.com/Bapugouda-B/Apache-K8s-Ingress-Demo" target="_blank" class="btn btn-primary">View GitHub Repository</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 DevOps Case Study by Bapugouda</p>
+  </footer>
+</body>
+</html>
