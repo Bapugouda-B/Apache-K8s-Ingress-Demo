@@ -1,0 +1,32 @@
+# custom-app-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: custom-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: custom-app
+  template:
+    metadata:
+      labels:
+        app: custom-app
+    spec:
+      containers:
+      - name: custom-app
+        image: bapu12/apache-k8s-ingress-demo:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: custom-app-service
+spec:
+  selector:
+    app: custom-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
