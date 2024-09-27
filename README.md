@@ -1,5 +1,8 @@
 # Deploying Apache Application and Custom App on Kubernetes  Using Ingress
 
+![K8s-Ingress](./website/screenshots/k8s-ingress.png)
+
+
 ## Overview
 This README provides a comprehensive guide to deploying an Apache application and Custom APP on Kubernetes with Ingress routing. The deployment will consist of two replicas of an Apache server and an additional custom application, all hosted on Amazon EC2 instances.
 
@@ -218,3 +221,13 @@ http://<node-ip>:<ingress-nodeport>/custom
 kubectl get svc -n ingress-nginx
 ```
 
+If everything is set up correctly, you should see the website running on above endpoints.
+
+## Project Demo
+![EC2-Instance](./website/screenshots/Nodes.png)
+
+![Apache](./website/screenshots/apacheServer.png)
+
+![App](./website/screenshots/customAppServer.png)
+
+![Ingress](./website/screenshots/igressStatus.png)
